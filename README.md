@@ -12,6 +12,7 @@ A caching framework using redis
 
 ## public interface
 
+```
  public interface ICache<TItem>
     {
         TItem GetOrAdd(string key, Func<TItem> item);
@@ -71,6 +72,7 @@ A caching framework using redis
         Task<TItem> GetAsync(string key);
     }
     
+   ``` 
     
    ## Examples
    
@@ -91,5 +93,46 @@ A caching framework using redis
   }
    
  ```
+ 
+ - Complex object
+ 
+ ```
+  var list = new List<User>();
+  list.Add(
+  new User()
+  {
+      Id = 1,
+      UserName = "rahman"
+  }
+  );
+
+  list.Add(
+  new User()
+  {
+      Id = 2,
+      UserName = "roya"
+  }
+  );
+
+  var cache = new Cache<List<User>>();
+  cache.Add("Users", list, TimeSpan.FromSeconds(3));
+ ```
    
-   
+ - Sql Dependency
+ 
+ ```
+  var cache = new Cache<User>();
+  var user = new User()
+  {
+      Id = 999,
+      UserName = "rahman"
+  };
+
+  cache.Add("rahman999", user, new SqlCacheDependency("Customer", (key, evt) =>
+  {
+      Console.WriteLine($"Key {key} was changed in database and captured by sql tracking!");
+  }
+  ));
+ ```
+ 
+ 
