@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedCache.Core", "RedCache.Core\RedCache.Core.csproj", "{D8D28FB3-D474-4AF3-93BA-2D8C003A901C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedCache.Console.Tests", "RedCache.Console.Tests\RedCache.Console.Tests.csproj", "{0013159C-0CCE-4234-A3E0-3FF38045E848}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sql.ChangeTracking.Common", "Sql.ChangeTracking.Common\Sql.ChangeTracking.Common.csproj", "{2BF72AD0-52D6-462F-8766-453D505E4FBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sql.ChangeTracking.WindowsService", "Sql.ChangeTracking.WindowsService\Sql.ChangeTracking.WindowsService.csproj", "{707B564A-4389-492A-811B-ECB7133BD13F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sql.ChangeTracking.Data", "Sql.ChangeTracking.Data\Sql.ChangeTracking.Data.csproj", "{847B4499-BE06-4F13-9AA4-73DB2F6E3A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sql.ChangeTracking.Client", "Sql.ChangeTracking.Client\Sql.ChangeTracking.Client.csproj", "{F110CDC4-AFEC-4F97-9320-2D96E01F92BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Caching", "Caching", "{21CB511E-AE9C-4276-9A06-ED39AD8224C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlChangeTracking", "SqlChangeTracking", "{0461B45F-A492-4F7C-B840-BEA36B577663}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadMe", "ReadMe", "{8266FC43-D770-4494-8FD7-EEE833EE57DB}"
+	ProjectSection(SolutionItems) = preProject
+		..\Sql.ChangeTracking\ReadMe.md = ..\Sql.ChangeTracking\ReadMe.md
+		..\Sql.ChangeTracking\SampleDatabaseAndTables.sql = ..\Sql.ChangeTracking\SampleDatabaseAndTables.sql
+		..\Sql.ChangeTracking\StoredProcedures.sql = ..\Sql.ChangeTracking\StoredProcedures.sql
+		..\Sql.ChangeTracking\Tables.sql = ..\Sql.ChangeTracking\Tables.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8D28FB3-D474-4AF3-93BA-2D8C003A901C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D28FB3-D474-4AF3-93BA-2D8C003A901C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D28FB3-D474-4AF3-93BA-2D8C003A901C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D28FB3-D474-4AF3-93BA-2D8C003A901C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0013159C-0CCE-4234-A3E0-3FF38045E848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0013159C-0CCE-4234-A3E0-3FF38045E848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0013159C-0CCE-4234-A3E0-3FF38045E848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0013159C-0CCE-4234-A3E0-3FF38045E848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF72AD0-52D6-462F-8766-453D505E4FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF72AD0-52D6-462F-8766-453D505E4FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF72AD0-52D6-462F-8766-453D505E4FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF72AD0-52D6-462F-8766-453D505E4FBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{707B564A-4389-492A-811B-ECB7133BD13F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{707B564A-4389-492A-811B-ECB7133BD13F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{707B564A-4389-492A-811B-ECB7133BD13F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{707B564A-4389-492A-811B-ECB7133BD13F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{847B4499-BE06-4F13-9AA4-73DB2F6E3A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{847B4499-BE06-4F13-9AA4-73DB2F6E3A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{847B4499-BE06-4F13-9AA4-73DB2F6E3A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{847B4499-BE06-4F13-9AA4-73DB2F6E3A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F110CDC4-AFEC-4F97-9320-2D96E01F92BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F110CDC4-AFEC-4F97-9320-2D96E01F92BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F110CDC4-AFEC-4F97-9320-2D96E01F92BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F110CDC4-AFEC-4F97-9320-2D96E01F92BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D8D28FB3-D474-4AF3-93BA-2D8C003A901C} = {21CB511E-AE9C-4276-9A06-ED39AD8224C4}
+		{0013159C-0CCE-4234-A3E0-3FF38045E848} = {21CB511E-AE9C-4276-9A06-ED39AD8224C4}
+		{2BF72AD0-52D6-462F-8766-453D505E4FBC} = {0461B45F-A492-4F7C-B840-BEA36B577663}
+		{707B564A-4389-492A-811B-ECB7133BD13F} = {0461B45F-A492-4F7C-B840-BEA36B577663}
+		{847B4499-BE06-4F13-9AA4-73DB2F6E3A19} = {0461B45F-A492-4F7C-B840-BEA36B577663}
+		{F110CDC4-AFEC-4F97-9320-2D96E01F92BA} = {0461B45F-A492-4F7C-B840-BEA36B577663}
+		{8266FC43-D770-4494-8FD7-EEE833EE57DB} = {0461B45F-A492-4F7C-B840-BEA36B577663}
+	EndGlobalSection
+EndGlobal
