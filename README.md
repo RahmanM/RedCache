@@ -1,11 +1,11 @@
 # RedCache
 A caching framework using redis
 
-- Enables to cache simple values 
+- enables to cache simple values 
 - complex objects
 - objects heirrarchy
 - enables to create named cache
-- SQL Dependency caching
+- sql Dependency caching
 - absolute caching
 - slicing expirary cache
 - cache expiry callback
