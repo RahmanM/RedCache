@@ -7,7 +7,7 @@ A caching framework using redis
 - enables to create named cache
 - sql Dependency caching
 - absolute caching
-- slicing expirary cache
+- sliding expirary cache
 - cache expiry callback
 
 ## public interface
